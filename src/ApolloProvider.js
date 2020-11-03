@@ -5,7 +5,7 @@ import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider } from '@ap
 import { setContext } from 'apollo-link-context';
 
 const httpLink = new createHttpLink({
-    uri: 'http://localhost:5000/'
+    uri: 'https://nameless-ridge-25305.herokuapp.com/'
 })
 
 const authLink = setContext(() => {
